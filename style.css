@@ -3,9 +3,12 @@
     background-color: black;
     color: aliceblue;
 }
+head
 
-html, body {
+body {
     height: 100%;
+    width: 100%;
+    
 }
 a{
     margin: auto;
@@ -55,3 +58,11 @@ a:hover{
     font-size: 10px;
     color: gray;
   }
+
+  .foot{
+    width: 100%;
+    position: absolute;
+    top: 100%;
+
+  }
+
