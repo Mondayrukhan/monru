@@ -1,54 +1,178 @@
-
-/* reset.css 간격같은 불필요한 요소들 완전히 리셋하고 처음부터. 구글에 코드 검색, css 파일 만들어서 붙여넣기 */
+@import "reset.css";
 .dark{
     background-color: black;
     color: aliceblue;
 }
-a { 
-    font-size: 20px;
-    text-decoration: none;
-    
-}
-a:hover{
-    color: aqua;
-    text-decoration: line-through;
-}
-
-.hi {
-    font-size: 52px;
-}
-html, body {
-    height: 100%;
-}
 header{
-    background-color: aqua;
-    text-align: center;
     width: 100%;
-    height: 80px;
-
-}
-main{
-    width: 100%;
-    height: 100%;
-    background-color: blueviolet;
-    text-align: center;
+    height: 150px;
+    /* background-color: blueviolet; */
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-main>img{
-    height: 50%;
+.symbol1{
+    /* background-color: aquamarine; */
+    width: 150px;
+    margin: 20px;
     
 }
-main>p{
-    width: 300px;
-    background-color: brown;
-    border: 4px;
-    padding: 20px;/* 글과 테두리 사이 공간 */
-    margin-left: auto;
-    margin-right: auto;
-}
-footer{
-    width: 100%;
-    height: 100px;
-    background-color: blue;
+
+.symbol2{
+    /* background-color: aquamarine; */
+    width: 150px;
+    margin: 20px;
 }
 
+.logo{
+    height: 80px;
+    margin: 10px;
+}
+
+
+
+.body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: bisque;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.body2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 1200px;
+    /* background-color: royalblue; */
+    justify-content: space-evenly;
+}
+.sub1{
+    background: linear-gradient( to top, black, rgb(143, 0, 0) );
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* background-color: blue; */
+}
+.sub1>img{
+    width: 100px;
+    margin-top: 70px;
+}
+.sub2>img{
+    width: 100px;
+    margin-top: 70px;
+}
+.sub2{
+    background: linear-gradient( to top, black, rgb(143, 0, 0) );
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* background-color: blue; */
+}
+.main{
+    width: 900px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    
+    /* margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 400px;
+     */
+    
+  }
+
+  .maingif{
+    width: 700px;
+    
+}
+  .about{
+    text-align: center;
+    width: 600px;
+    font-size: 8px;
+    line-height: 14.5px;
+    color: gray;
+    margin: 10px;
+
+  }
+  .item{
+    width: 100%;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin: 10px;
+    
+  }
+
+.logos{
+    width: 100%;
+}
+/* head
+
+body {
+    height: 100%;
+    width: 100%;
+    
+}
+a{
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    right: 0%;
+    font-size: 30px;
+
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+a:hover{
+    color: white
+}
+.text{
+    margin: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: aliceblue;
+    font-size: 11px;
+
+}
+.animated{
+    margin: auto;
+    position: absolute;
+    top: 50px;
+    left: 0%;
+    right: 0%;
+    width: 40%;
+}
+.hov-anim-box:hover .animated {
+    display: inline
+  }
+
+  
+
+  .foot{
+    width: 100%;
+    position: absolute;
+    top: 100%;
+
+  }
+ */
