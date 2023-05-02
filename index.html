@@ -1,64 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>witcher</title>
-    <link rel="stylesheet" href="style.css">
-    <div >
-      <!-- <img class="logo"src="./img/The-Witcher-episode-3-symbol_Edited.jpg" alt=""> -->
-    </div>
-    
+    <title>cororo js</title>
+    <!-- <script src="./main.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        
+      }
+  
+    </style>
+
   </head>
-  
-  <header>
-    <img class="symbol1" src="./img/이미지자료-08.png" alt="">
-    <img class="logo" src="./img/The-Witcher-episode-3-symbol_Edited.jpg" alt="">
-    <img class="symbol2" src="./img/이미지자료-08.png" alt="">
-  </header>
-  <body class="dark">
-    <div class="body2">
-        <div class="sub1">
-          <img src="./img/Asset 14.png" alt="">
-          <img src="./img/Asset 15.png" alt="">
-          <img src="./img/Asset 16.png" alt="">
-          <img src="./img/Asset 17.png" alt="">
-          <img src="./img/Asset 18.png" alt="">
+<body>
+    <main></main>
 
-        </div>
-        <div class="main">
-          <img class="maingif" src="./img/witcher-logo.gif" alt="">
-          <p class="about">The Witcher is a fantasy drama television series
-              created by Lauren Schmidt Hissrich for Netflix. 
-              It is based on the book series of the same name 
-              by Polish writer Andrzej Sapkowski. Set on a fictional, 
-              medieval-inspired landmass known as the Continent, 
-              The Witcher explores the legend of Geralt of Rivia, 
-              Yennefer of Vengerberg and Princess Ciri. 
-              It stars Henry Cavill, Anya Chalotra, and Freya Allan. 
-          </p>
-          <div class="item">
-            <div class="character">character</div>
-            <div class="script">script</div>
-            <div class="series">series</div>
-          </div>
-        </div>
-        <div class="sub2">
-          <img src="./img/Asset 14.png" alt="">
-          <img src="./img/Asset 15.png" alt="">
-          <img src="./img/Asset 16.png" alt="">
-          <img src="./img/Asset 17.png" alt="">
-          <img src="./img/Asset 18.png" alt="">
-        </div>
-    </div>
+<style>
     
+</style>
+    <script>
+//         function setup() {
+//   createCanvas(windowWidth, windowHeight);
+//   angleMode(DEGREES)
+//   rectMode(CENTER)
+// }
+
+// function draw() {
+//   background(20,20,30);
+//   translate(width/2,height/2)
+  
+//   noFill()
+//   stroke(255)
+  
+//   for(i=0; i<50; i++){
+//     push()
+//     //let r = map(i, 0, 20, 100, 1)
+//     var r = map(i, 0, 20, 100, 1)
+//     var g = map(sin(frameCount/2), -1)
+//     var b = 255;
     
-      <img class="logos" src="./img/symbols-02.jpg" alt="" class="foot">
+//     stroke (r,g,b)
+//     rotate(sin(frameCount + i)*100)
+//     rect(sin(frameCount+i)*mouseX,cos(frameCount+i)*mouseY,600-i*2, 600-i*2,200+i);
+//     pop()
+//   }
+// }
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  angleMode(DEGREES)
+  rectMode(CENTER)
+}
 
-
-  </body>
+function draw() {
   
+  background(20,20,30);
+  translate(width/2,height/2)
   
+  noFill()
+  stroke(255)
+  
+  for(var i=0; i<200; i++){
+    push()
+    //let r = map(i, 0, 20, 100, 1)
+    var r = map(i, 0, 200, 100, 1)
+    var g = map(sin(frameCount/2), -1,1,100,200)
+    var b = map(cos(frameCount),-1,1,1,200);
+    
+    stroke (r,g,b)
+    rotate(tan(frameCount + i)*200)
+    rect(cos(frameCount+i)*mouseX,sin(frameCount+i)*mouseY,50-i*1, 200-i*2,100+i);
+    pop()
+  }
+}
+        // alert("hello,world");
+        // console.log(hello);
+        // let name = "지원"
+        // let age = 22;
+        // let bool = true;
+        // let hello = '안녕하세요, 지원입니다. ${age}살 입니다.'
 
+// let 계절 =["봄","여름","가을","겨울"]
+// console.log(계절);
+// for(i = 0; i < 계절.length; i++){
+//     console.log(계절[i]);
+// }
+// for(i = 1; i<= 10; i++){
+//     if(i%2)
+// }
+    </script>
+</body>
 </html>
